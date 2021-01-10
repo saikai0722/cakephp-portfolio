@@ -16,10 +16,10 @@
 	
 	<nav id="nav" class="groble_nav">
 		<ul>
-			<li><a href="<?php echo $this->Url->build(['controller'=>'Works', 'action'=>'index']); ?>">制作実績</a></li>
 			<li><a href="<?php echo $this->Url->build(['controller'=>'About', 'action'=>'index']); ?>">私について</a></li>
-			<li><a href="<?php echo $this->Url->build(['controller'=>'Blog', 'action'=>'index']); ?>">備忘録</a></li>
-			<li><a href="liks.html">好きなもの</a></li>
+			<li><a href="<?php echo $this->Url->build(['controller'=>'Works', 'action'=>'index']); ?>">制作実績</a></li>
+			<?php /*<li><a href="<?php echo $this->Url->build(['controller'=>'Blog', 'action'=>'index']); ?>">備忘録</a></li>
+			<li><a href="liks.html">好きなもの</a></li>*/?>
 			<li><a href="contact.html">お問い合わせ</a></li>
 		</ul>
 	</nav>
