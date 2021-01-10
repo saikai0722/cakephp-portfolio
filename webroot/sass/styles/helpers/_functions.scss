@@ -1,0 +1,17 @@
+////////// 関数定義 //////////
+
+/// 数値から単位をなくす
+@function nounit($value){
+	$_nounit_divisor: (floor($value) * 2) % 2 + 1;
+	@return ($value / $_nounit_divisor);
+}
+
+///ビューポートサイズ自動計算
+@function autoViewportSize($width, $fontSize, $sizeUnit) {
+	@if unitless($width) and unitless($fontSize) {
+		@return ($fontSize / $width) * 100 + $sizeUnit;
+	}
+	@else {
+		@return (nounit($fontSize) / $width) * 100 + $sizeUnit;
+	}
+}

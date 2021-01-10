@@ -1,0 +1,173 @@
+//================================
+//ベンダープレフィックス自動付与
+//================================
+$set-prefix: '', -moz- , -webkit- , -o- , -ms-;
+@mixin PropertySetPrefix($name, $value){ //ベンダープレフィックスを自動で付与する
+	@each $prefix in $set-prefix {
+		#{$prefix}#{$name}: $value;
+	}
+}
+@mixin valueSetPrefix($name, $value){ //値にプレフィックスを付与
+	@each $prefix in $set-prefix {
+		#{$name}: #{$prefix}$value;
+	}
+}
+
+//================================
+//アニメーション
+//================================
+@mixin headlineLarge {
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	font-weight: normal;
+	font-family: $fontFamilyBase;
+	&::after {
+		position: absolute;
+		content: " ";
+		width: 100px;
+		height: 5px;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.headline_large_en {
+		display: block;
+		color: $colorMain;
+		font-weight: bold;
+	}
+}
+@mixin headlineMedium {
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+	font-weight: normal;
+	&::after {
+		position: absolute;
+		z-index: 2;
+		content: " ";
+		width: 100%;
+		height: 3px;
+		bottom: 0;
+		left: 0;
+	}
+}
+@mixin headlineSmall {
+	position: relative;
+	z-index: 2;
+	padding-left: 18px;
+	font-weight: normal;
+	&::after {
+		position: absolute;
+		z-index: 2;
+		content: " ";
+		width: 18px;
+		height: 3px;
+		top: 1.3em * .5;
+		left: 0;
+		transform: translatey(-50%) rotate(-45deg);
+	}
+}
+
+//================================
+//ボタン
+//================================
+//矢印の共通設定(btnArrow)
+@mixin btnArrow {
+	position:absolute;
+	top:50%;
+	right:.7em;
+	transform:translateY(-50%);
+	font-size:inherit;
+	line-height:1.2;
+	white-space:nowrap;
+	font-family: 'Material Icons';
+	content:"keyboard_arrow_right";
+	width: 1.2em;
+	height:1.2em;
+	padding:.1em;
+}
+   //形状の共通設定(btnSetting)
+@mixin btnSetting {
+	position:relative;
+	padding:.7em 2.4em .7em .7em;
+	border:1px solid transparent;
+	color:$colorMonoLight;
+	line-height:1.5;
+	box-shadow:$colorTransShadowLink;
+	&::after{
+		@include btnArrow;
+	}
+	&[target="_blank"] {
+		&::after{
+			content:"";
+		}
+	}
+}
+   //配色の共通設定(btnSettingInline)
+@mixin btnSettingInline($base, $after){
+	@include btnSetting;
+	display:inline-block;
+	text-align:center;
+	border-color:$base;
+	background-color: $base;
+	&::after{
+		color:$base;
+	}
+	&:hover{
+		background: $after;
+		&::after{
+			color:$after;
+		}
+	}
+}
+//================================
+//リンクトライアングル
+//================================
+@mixin linkTryangle {
+	position:relative;
+	text-decoration:none;
+	color:$colorFontBase;
+	&::after{
+		position:absolute;
+		content:"";
+		bottom:5px;
+		right:5px;
+		border:$linkTryangle solid transparent;
+		border-right:$linkTryangle solid $colorMain;
+		border-bottom:$linkTryangle solid $colorMain;
+	}
+}
+//================================
+//アニメーション
+//================================
+@mixin animationOn {
+	@include PropertySetPrefix(transition, 0.35s);//ベンダープレフィックス自動付与
+}
+@mixin animationOff {
+	@include PropertySetPrefix(transition, 0s);//ベンダープレフィックス自動付与
+}
+
+//================================
+//マテリアルアイコン
+//================================
+@mixin materialIcons {
+	position: absolute;
+	font-family: 'Material Icons';
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 1;
+	white-space: nowrap;
+}
+//================================
+//ラベル
+//================================
+@mixin lableSetting {
+	display: inline-block;
+	padding: 0.4em 0.8em;
+	font-size: $fontNotice;
+	line-height: 1;
+	color: $colorMonoLight;
+	background-color: $colorMainDeep;
+}

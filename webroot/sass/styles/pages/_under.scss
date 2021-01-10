@@ -1,0 +1,214 @@
+.under_main {
+    padding-top: 78px;
+}
+//================================
+//メインビジュアル
+//================================
+.mv {
+    position: relative;
+    height: 200px;
+	background: url(../img/fv-bgi_01@2x.jpg) top center $colorMonoLight;
+    background-size: cover;
+    &::after {
+		content: " ";
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: $colorTransDeep;
+    }
+    .page_title {
+        z-index: 2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        white-space: nowrap;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+    }
+}
+//================================
+//パンくずリスト
+//================================
+.breadcrumbs {
+    overflow: auto;
+    ul {
+        display: table;
+        overflow: visible;
+        li {
+            display: table-cell;
+            padding: 10px 10px 10px 0;
+            line-height: 1;
+            white-space: nowrap;
+            vertical-align: middle;
+            font-size: 15px;
+            a {
+                vertical-align: middle;
+                color: #6BBBE5;
+            }
+            &::before {
+                margin: 0 5px -5px;
+                font-family: 'Material Icons';
+                font-size: 20px;
+                line-height: 1;
+                white-space: nowrap;
+                content: "\E5CC";
+                vertical-align: middle;
+            }
+            &:first-of-type::before {
+                margin: 0 5px 0 0;
+                color: #6BBBE5;
+                content: "\E88A";
+            }
+        }
+    }
+}
+//================================
+//ブログ
+//================================
+.card_box.card_side {
+    a.card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 16px;
+        .thumbnail_img {
+            min-width: 40%;
+            height: 100px;
+            margin-right: 8px;
+            margin-bottom: 0;
+        }
+        .card_text_box {
+            flex-grow: 1;
+        }
+    }
+}
+//================================
+//ブログ　記事ページ
+//================================
+.category{
+    margin-bottom: 16px;
+}
+.writing_time {
+    display: block;
+    margin-bottom: 16px;
+}
+.paragraph_box {
+    margin-bottom: 32px;
+    .paragraph_img {
+        text-align: center;
+        margin-bottom: 16px;
+    }
+    .text_box {
+        p {
+            font-family: $fontFamilyBase;
+            font-weight: normal;
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+    }
+}
+//================================
+//モーダルウインドウ
+//================================
+
+
+//================================
+//ブログ02の内容
+//================================
+.flex_col_3 {
+    .flex_item {
+        .flex_item_img_wrapper {
+            width: 200px;
+            min-width: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            .flex_item_img {
+                width: 100%;
+            }
+            .flex_item_img_cap {
+
+            }
+        }
+    }
+    // .flex_item_text {
+
+    // }
+}
+
+
+@media screen and (min-width:320px) { 
+    /*　画面サイズが480pxからはここを読み込む　*/
+}
+@media screen and (min-width:768px) {
+    /*　画面サイズが768pxからはここを読み込む　*/
+    .works_wrapper.col3 {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        .works_item {
+            width: calc( 33% - 8px );
+            margin-bottom: 32px;
+            &:not(:nth-of-type(3n)) {
+                margin-right: 16px;
+            }
+        }
+    }
+    .card_box.card_side {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        a.card {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: calc( 50% - 8px );
+            margin-bottom: 16px;
+            &:nth-of-type(odd) {
+                margin-right: 16px;
+            }
+            .thumbnail_img {
+                width: 40%;
+                height: 100px;
+                margin-right: 8px;
+                margin-bottom: 0;
+            }
+            .card_text_box {
+                flex-grow: 1;
+            }
+        }
+    }
+    .media_box {
+        display: flex;
+        justify-content: space-between;
+        .paragraph_img {
+            min-width: 35%;
+            margin-right: 16px;
+        }
+    }
+    .media_box_float {
+        .paragraph_img {
+            width: 35%;
+            margin-right: 16px;
+            float: left;
+        }
+    }
+    .clearfix::after {
+        content: " ";
+        display: block;
+        clear: both;
+    }
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+	/*　画面サイズが768pxから1024pxまではここを読み込む　*/
+}
+@media screen and (min-width:1024px) {
+	/*　画面サイズが1024pxからはここを読み込む　*/
+}

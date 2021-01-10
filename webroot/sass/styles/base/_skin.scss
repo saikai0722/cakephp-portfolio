@@ -1,0 +1,342 @@
+/////////////////////文字・フォント関連設定///////////////////////////
+body {
+	font-size: $fontBase;
+	//font-size: autoViewportSize(375, $fontBase, vw);
+}
+h1,h2,h3,h4,h5,h6 {
+	line-height: $lineHeight;
+	font-family: $fontFamilyBase;
+	font-weight: bold;
+	* {
+		font-family: $fontFamilyBase;
+	}
+}
+a {
+	color: $colorMain;
+	text-decoration: underline;
+	@include animationOn;
+	&:hover,
+	&:focus {
+		color: $colorMainPale;
+		text-decoration: none;
+	}
+	&:not([href]){
+		color: inherit;
+		text-decoration: none;
+		&:hover,
+		&:focus {
+			color: inherit;
+		}
+	}
+	&[class*="btn"] {
+		text-decoration: none;
+	}
+	>img {
+		backface-visibility: hidden;
+		@include animationOn;
+	}
+	&:hover,
+	&:focus {
+		>img{
+			opacity: .8;
+		}
+		&.text_decoration_none {
+			text-decoration: none;
+		}
+	}
+}
+
+/* Material iconsを利用する */
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	//font-size: 24px;  /* 推奨サイズ */
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	line-height: 1;
+	text-transform: none;
+	/* WebKitブラウザサポート */
+	-webkit-font-smoothing: antialiased;
+	/* Chrome、Safariサポート */
+	text-rendering: optimizeLegibility;
+	/* Firefoxサポート */
+	-moz-osx-font-smoothing: grayscale;
+	/* IEサポート */
+	font-feature-settings: 'liga';
+}
+/* アイコンサイズ */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+/* 背景が明るいとき用のアイコン色 */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+/* 背景が暗いとき用のアイコン色 */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+//字形
+//---------------------------------------------------------------//
+.font_family_base {
+	font-family: $fontFamilyBase;
+	* {
+		font-family: $fontFamilyBase;
+	}
+}
+.font_family_main {
+	font-family: $fontFamilyMain;
+	* {
+		font-family: $fontFamilyMain;
+	}
+}
+.font_weight_normal { font-weight: normal !important;}
+.font_weight_bold { font-weight: bold !important;}
+
+//文字位置
+//---------------------------------------------------------------//
+
+.v_align_baseline { vertical-align: baseline !important;}
+.v_align_midle { vertical-align: middle!important;}
+.v_align_top { vertical-align: top!important;}
+.v_align_bottom { vertical-align: bottom!important;}
+
+.text_nowrap { white-space: nowrap;}
+.text_indent {
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+//文字組み
+//---------------------------------------------------------------//
+.line_height {
+	line-height: $lineHeightMin;
+}
+.line_height_large {
+	line-height: $lineHeightLarge;
+}
+
+ruby,.ruby{
+	display: inline-block;
+	flex-direction: column-reverse;
+	position: relative;
+	rt,.ruby_kana {
+		margin-top: .2em;
+		margin-bottom: -5px;
+		padding-left: .4em;
+		text-align: center;
+		letter-spacing: .4em;
+		font-size: 50%;
+		line-height: 1.1;
+	}
+}
+
+//文字サイズ
+//---------------------------------------------------------------//
+.font_scale_large { font-size: 150%!important;}
+.font_scale_medium { font-size: 125%!important;}
+.font_scale_small { font-size: 85%!important;}
+.font_scale_xsmall { font-size: 60%!important;}
+
+.font_ularge {
+	font-size: $fontULarge!important;
+	//font-size: autoViewportSize(375, $fontULarge, vw)!important;
+}
+.font_xlarge {
+	font-size: $fontXLarge!important;
+	//font-size: autoViewportSize(375, $fontXLarge, vw)!important;
+}
+.font_large {
+	font-size: $fontLarge!important;
+	//font-size: autoViewportSize(375, $fontLarge, vw)!important;
+}
+.font_medium {
+	font-size: $fontMedium!important;
+	//font-size: autoViewportSize(375, $fontMedium, vw)!important;
+}
+.font_base {
+	font-size: $fontBase!important;
+	//font-size: autoViewportSize(375, $fontBase, vw)!important;
+}
+.font_small {
+	font-size: $fontSmall!important;
+	//font-size: autoViewportSize(375, $fontSmall, vw)!important;
+}
+.font_notice {
+	font-size: $fontNotice!important;
+	//font-size: autoViewportSize(375, $fontNotice, vw)!important;
+}
+
+//文字色
+//---------------------------------------------------------------//
+.font_color_base { color: $colorFontBase!important;}
+.font_color_mono_dark { color: $colorMonoDark!important;}
+.font_color_mono_deep { color: $colorMonoDeep!important;}
+.font_color_mono_pale { color: $colorMonoPale !important;}
+.font_color_mono_clear { color: $colorMonoClear !important;}
+.font_color_mono_light { color: $colorMonoLight !important;}
+
+.font_color_main { color: $colorMain !important;}
+.font_color_main_dark { color: $colorMainDark!important;}
+.font_color_main_deep { color: $colorMainDeep !important;}
+.font_color_main_pale { color: $colorMainPale !important;}
+.font_color_main_clear { color: $colorMainClear !important;}
+.font_color_main_light { color: $colorMainLight !important;}
+
+.font_color_accent { color: $colorAccent !important;}
+.font_color_accent_dark { color: $colorAccentDark!important;}
+.font_color_accent_deep { color: $colorAccentDeep !important;}
+.font_color_accent_pale { color: $colorAccentPale!important;}
+.font_color_accent_clear { color: $colorAccentClear !important;}
+.font_color_accent_light { color: $colorAccentLight !important;}
+
+.font_color_ladies { color: $colorLadies !important;}
+.font_color_ladies_dark { color: $colorLadiesDark !important;}
+.font_color_ladies_light { color: $colorLadiesLight !important;}
+.font_color_entry { color: $colorEntry !important;}
+
+.error-message,
+.font_color_caution {color: $colorCaution!important;}
+
+.marker_main {
+	margin-left: .1em;
+	margin-right: .1em;
+	background: linear-gradient(transparent 70%, rgba($colorMainPale,.6) 30%);
+}
+.marker_accent {
+	margin-left: .1em;
+	margin-right: .1em;
+	background: linear-gradient(transparent 70%, rgba($colorAccent,.6) 30%);
+}
+
+
+/////////  色関係  //////////
+
+//背景色
+//---------------------------------------------------------------//
+.bg_color_mono_dark { background-color: $colorMonoDark!important;}
+.bg_color_mono_deep { background-color: $colorMonoDeep!important;}
+.bg_color_mono_pale { background-color: $colorMonoPale!important;}
+.bg_color_mono_clear { background-color: $colorMonoClear!important;}
+.bg_color_mono_light { background-color: $colorMonoLight!important;}
+
+.bg_color_main { background-color: $colorMain!important;}
+.bg_color_main_dark { background-color: $colorMainDark!important;}
+.bg_color_main_deep { background-color: $colorMainDeep!important;}
+.bg_color_main_pale { background-color: $colorMainPale!important;}
+.bg_color_main_clear { background-color: $colorMainClear!important;}
+.bg_color_main_light { background-color: $colorMainLight!important;}
+
+.bg_color_accent { background-color: $colorAccent!important;}
+.bg_color_accent_dark { background-color: $colorAccentDark!important;}
+.bg_color_accent_deep { background-color: $colorAccentDeep!important;}
+.bg_color_accent_pale { background-color: $colorAccentPale!important;}
+.bg_color_accent_clear { background-color: $colorAccentClear!important;}
+.bg_color_accent_light { background-color: $colorAccentLight!important;}
+
+.bg_color_ladies { background-color: $colorLadies!important}
+.bg_color_ladies_dark { background-color: $colorLadiesDark!important}
+.bg_color_ladies_light { background-color: $colorLadiesLight!important}
+
+.bg_color_entry {background-color: $colorEntry!important;}
+
+.bg_color_trans_light { background-color: $colorTransLight!important}
+.bg_color_trans_dark { background-color: $colorTransDark!important}
+.bg_color_trans_deep { background-color: $colorTransDeep!important}
+.bg_color_trans_pale { background-color: $colorTransPale!important}
+.bg_color_trans_main { background-color: $colorTransMain!important}
+
+.bg_stripe_light {
+	$stripeLight: $colorMonoLight;
+	$stripePale: $colorMonoClear;
+	$stripeSpace: 10px; //ストライプの間隔
+	background: repeating-linear-gradient(
+	-45deg,
+		$stripePale 0,
+		$stripePale $stripeSpace,
+		$stripeLight $stripeSpace,
+		$stripeLight $stripeSpace*2,
+	);
+}
+.bg_stripe_main {
+	$stripeLight: $colorMonoLight;
+	$stripePale: $colorMonoClear;
+	$stripeSpace: 10px; //ストライプの間隔
+	background: repeating-linear-gradient(
+	-45deg,
+		$stripePale 0,
+		$stripePale $stripeSpace,
+		$stripeLight $stripeSpace,
+		$stripeLight $stripeSpace*2,
+	);
+}
+// .bg_particle {
+// 	//background: url(../common/bg_particle.png) top right $colorMonoLight;
+// 	background-size: contain;
+// }
+// .bg_halftone {
+// 	background: url(../common/bg_halftone.png) $colorMonoLight;
+// }
+// .bg_clinic {
+// 	position: relative;
+// 	background: transparent;
+// 	&::after {
+// 		content: "";
+// 		position: fixed;
+// 		z-index: -1;
+// 		top: 0;
+// 		bottom: 0;
+// 		left: 0;
+// 		right: 0;
+// 		background: url(../common/bg_clinic_sp.jpg) left top;
+// 		background-size: 100% auto;
+// 	}
+// }
+// .bg_result {
+// 	position: relative;
+// 	//background: url(../common/bg_price_monitor.jpg) top center $colorMonoLight;
+// 	background-size: contain;
+// }
+// .bg_entry {
+// 	position: relative;
+// 	//background: url(../common/footer_entry_bg.jpg) top center $colorMonoLight;
+// 	background-size: contain;
+// 	* {
+// 		position: relative;
+// 		z-index: 2;
+// 	}
+// 	&::after {
+// 		content: " ";
+// 		position: absolute;
+// 		z-index: 1;
+// 		top: 0;
+// 		bottom: 0;
+// 		left: 0;
+// 		right: 0;
+// 		background: $colorTransDeep;
+// 	}
+// }
+
+
+@media screen and (min-width:320px) { 
+	/*　画面サイズが480pxからはここを読み込む　*/
+	.container {width: 100%;padding: 0 20px;margin: 0 auto;}
+	.sp { display: block;}
+	.pc { display: none;}
+}
+@media screen and (min-width:768px) {
+	.container {width: 750px;}
+	.sp { display: none;}
+	.pc { display: block;}
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+	/*　画面サイズが768pxから1024pxまではここを読み込む　*/
+}
+@media screen and (min-width:1024px) {
+	/*　画面サイズが1024pxからはここを読み込む　*/
+	.container {width: 970px;margin: 0 auto;}
+}

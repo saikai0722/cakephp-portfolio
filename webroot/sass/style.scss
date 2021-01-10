@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+//変数定義
+@import "styles/helpers/variables";
+@import "styles/helpers/functions";
+@import "styles/helpers/mixins";
+
+//追加設定
+@import "styles/module/spacer";
+
+//ベース設定
+@import "styles/base/skin";
+
+//構成パーツ
+@import "styles/layout/header";
+@import "styles/layout/footer";
+
+//独自設定
+@import "styles/pages/main";
+@import "styles/pages/under";
