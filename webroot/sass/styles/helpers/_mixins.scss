@@ -160,6 +160,17 @@ $set-prefix: '', -moz- , -webkit- , -o- , -ms-;
 	line-height: 1;
 	white-space: nowrap;
 }
+
+@mixin listNoteSetting {
+	position: relative;
+	margin-bottom: .3em;
+	&::before{
+		@include materialIcons;
+		top: 0;
+		font-size: 1.5em;
+		line-height: 1.134;
+	}
+}
 //================================
 //ラベル
 //================================

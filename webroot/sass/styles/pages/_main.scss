@@ -381,7 +381,7 @@ h4.headline {
 	margin-bottom: 32px;
 	.works_item {
 		text-align: center;
-		margin-bottom: 16px;
+		margin-bottom: 32px;
 		display: block;
 		overflow: hidden;
 		&:hover, &:focus {
@@ -423,6 +423,58 @@ h4.headline {
 	}
 }
 
+//================================
+//list
+//================================
+//アイコン付きリスト（Materiale Icon使用）
+%list_setting_mi {
+	li {
+		@include listNoteSetting;
+		padding-left: 1.75em;
+		&::before {
+			left: 0;
+			color: $colorMain;
+		}
+		&[class*="font_color_"] {
+				&::before {
+					color: inherit;
+				}
+			}
+		}
+		&[class*="font_color_"] {
+			li {
+				&::before {
+					color: inherit;
+				}
+			}
+		}
+}
+
+.list_link {
+	@extend %list_setting_mi;
+	li {
+		&::before {
+			content: "\E315";
+		}
+	}
+}
+.list_check {
+	@extend %list_setting_mi;
+	li {
+		&::before {
+			content: "\E5CA";
+		}
+	}
+}
+.list_check_circle {
+	@extend %list_setting_mi;
+	li {
+		&::before {
+			content: "\E86C";
+		}
+	}
+}
+
 
 @media screen and (min-width:320px) { 
 	/*　画面サイズが480pxからはここを読み込む　*/
@@ -456,19 +508,28 @@ h4.headline {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		margin-bottom: 32px;
 		.content_img {
-			width: 45%;
+			width: 40%;
 			margin-right: 24px;
+			margin-bottom: 0;
+		}
+		.content_text_box {
+			width: 60%;
 		}
 	}
 	.works_wrapper {
 		display: flex;
-		justify-content: space-between;
+		//justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
 		margin-bottom: 32px;
+		margin-left: -8px;
+		margin-right: -8px;
 		.works_item {
-			width: 32%;
+			width: 33.333%;
+			padding-left: 8px;
+			padding-right: 8px;
 			.works_img {
 				margin-bottom: 16px;
 			}

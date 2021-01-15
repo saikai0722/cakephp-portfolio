@@ -21,6 +21,8 @@ Router::scope('/', function (RouteBuilder $routes) {
     //Works
     $routes->connect('works/', ['controller' => 'works', 'action' => 'index']);
     $routes->connect('works/banner', ['controller' => 'works', 'action' => 'banner']);
+    $routes->connect('works/shinwa/', ['controller' => 'works', 'action' => 'shinwa']);
+
     //Blog
     $routes->connect('blog/', ['controller' => 'blog', 'action' => 'index']);
     $routes->connect('blog/a01', ['controller' => 'blog', 'action' => 'a01']);

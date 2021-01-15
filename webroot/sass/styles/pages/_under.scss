@@ -137,11 +137,29 @@
             }
         }
     }
-    // .flex_item_text {
-
-    // }
 }
 
+//================================
+//制作実績（サイト）
+//================================
+.site_images {
+    .col1 {
+        width: 100%;
+        background-color: #ddd;
+        padding: 16px;
+        margin-bottom: 24px;
+    }
+    .col2 {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        figure {
+            width: 49%;
+            background-color: #ddd;
+            padding: 16px;
+        }
+    }
+}
 
 @media screen and (min-width:320px) { 
     /*　画面サイズが480pxからはここを読み込む　*/

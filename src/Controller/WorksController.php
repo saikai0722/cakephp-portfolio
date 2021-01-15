@@ -17,4 +17,8 @@ class WorksController extends AppController {
 		$this->set('title', 'portfolio | Works_banner');
 	}
 
+	public function shinwa() {
+		$this->set('title', 'portfolio | Works_shinwa');
+	}
+
 }

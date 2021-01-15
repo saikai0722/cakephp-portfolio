@@ -16,17 +16,11 @@
             制作実績
         </h2>
         <div class="works_wrapper col3">
-            <a href="<?php echo $this->Url->build(['controller'=>'Works', 'action'=>'banner']); ?>" class="works_item">
+            <a href="<?php echo $this->Url->build(['controller'=>'Works', 'action'=>'shinwa']); ?>" class="works_item">
                 <figure class="works_img">
                     <img src="https://placehold.jp/640x400.png"  alt="">
                 </figure>
-                <p class="works_title">banner</p>
-            </a>
-            <a href="#" class="works_item">
-                <figure class="works_img">
-                    <img src="https://placehold.jp/640x400.png"  alt="">
-                </figure>
-                <p class="works_title">架空のサイト</p>
+                <p class="works_title">親和クリニック</p>
             </a>
             <a href="#" class="works_item">
                 <figure class="works_img">
