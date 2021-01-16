@@ -3127,6 +3127,7 @@ h4.headline::after {
 
 .list_link li::before {
   content: "\E315";
+  top: -5px;
 }
 
 .list_check li::before {

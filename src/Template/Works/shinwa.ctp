@@ -31,7 +31,7 @@
             <h4 class="headline">サイト規模</h4>
             <p class="margin_b_medium">約490ページ</p>
             <h4 class="headline">URL</h4>
-            <p class="margin_b_medium">shinwa-clinic.jp/（検索する際はhttps://を付与してください）</p>
+            <p class="margin_b_medium">https://shinwa-clinic.jp/</p>
             <h4 class="headline">主な担当業務</h4>
             <ul class="list_link margin_b_medium">
                 <li>新規ページ作成・ページ改修</li>

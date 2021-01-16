@@ -455,6 +455,7 @@ h4.headline {
 	li {
 		&::before {
 			content: "\E315";
+			top: -5px;
 		}
 	}
 }
