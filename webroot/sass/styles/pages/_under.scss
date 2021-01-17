@@ -6,7 +6,7 @@
 //================================
 .mv {
     position: relative;
-    height: 200px;
+    height: 130px;
 	background: url(../img/fv-bgi_01@2x.jpg) top center $colorMonoLight;
     background-size: cover;
     &::after {
@@ -49,7 +49,10 @@
             font-size: 15px;
             a {
                 vertical-align: middle;
-                color: #6BBBE5;
+                color: $colorMain;
+                &:hover {
+                    color: $colorMainPale;
+                }
             }
             &::before {
                 margin: 0 5px -5px;
@@ -62,7 +65,7 @@
             }
             &:first-of-type::before {
                 margin: 0 5px 0 0;
-                color: #6BBBE5;
+                color: $colorMain;
                 content: "\E88A";
             }
         }
@@ -142,21 +145,34 @@
 //================================
 //制作実績（サイト）
 //================================
+.site_info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .thmb_img {
+        width: 100%;
+    }
+    .site_info_text {
+        width: 100%;
+        background-color: $colorMainLight;
+    }
+}
 .site_images {
     .col1 {
         width: 100%;
         background-color: #ddd;
-        padding: 16px;
-        margin-bottom: 24px;
+        padding: 8px;
+        margin-bottom: 8px;
     }
     .col2 {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 24px;
+        margin-bottom: 8px;
         figure {
             width: 49%;
             background-color: #ddd;
-            padding: 16px;
+            padding: 8px;
         }
     }
 }
@@ -166,6 +182,9 @@
 }
 @media screen and (min-width:768px) {
     /*　画面サイズが768pxからはここを読み込む　*/
+    .mv {
+        height: 200px;
+    }
     .works_wrapper.col3 {
         display: flex;
         justify-content: start;
@@ -222,6 +241,27 @@
         content: " ";
         display: block;
         clear: both;
+    }
+    .site_info {
+        .thmb_img {
+            width: 49%;
+        }
+        .site_info_text {
+            width: 49%;
+            padding: 16px;
+        }
+    }
+    .site_images {
+        .col1 {
+            padding: 16px;
+            margin-bottom: 24px;
+        }
+        .col2 {
+            margin-bottom: 24px;
+            figure {
+                padding: 16px;
+            }
+        }
     }
 }
 @media screen and (min-width:768px) and ( max-width:1024px) {

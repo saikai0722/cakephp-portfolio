@@ -5,6 +5,7 @@ header {
 	transition: .3s;
 	z-index: 4;
 	background-color: #fff;
+	box-shadow: $colorTransShadow;
 	.head_inner{
 		padding: 10px 0;
 		.container {

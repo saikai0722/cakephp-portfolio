@@ -56,7 +56,7 @@ $set-prefix: '', -moz- , -webkit- , -o- , -ms-;
 @mixin headlineSmall {
 	position: relative;
 	z-index: 2;
-	padding-left: 18px;
+	// padding-left: 18px;
 	font-weight: normal;
 	&::after {
 		position: absolute;

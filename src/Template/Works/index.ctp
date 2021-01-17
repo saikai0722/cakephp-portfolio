@@ -18,7 +18,7 @@
         <div class="works_wrapper col3">
             <a href="<?php echo $this->Url->build(['controller'=>'Works', 'action'=>'shinwa']); ?>" class="works_item">
                 <figure class="works_img">
-                    <img src="https://placehold.jp/640x400.png"  alt="">
+                <?php echo $this->Html->image('works/site/works_thmb_shinwa.jpg', array('alt' => '親和クリニックサイトサムネイル画像')); ?>
                 </figure>
                 <p class="works_title">親和クリニック</p>
             </a>

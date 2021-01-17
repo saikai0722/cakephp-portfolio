@@ -25,7 +25,10 @@ main section{
 //背景
 //================================
 .bg_mono {
-	background: #cccccc;
+	background: $colorMonoPale;
+}
+.bg_mono_light {
+	background: $colorMonoLight;
 }
 
 //================================
@@ -33,12 +36,15 @@ main section{
 //================================
 h2.headline {
 	@include headlineLarge;
-	padding-bottom: 16px;
+	padding: 16px;
 	margin-bottom: 32px;
 	font-size: $fontXLarge;
-	&::after {
-		background: linear-gradient(to left,$colorMonoPale 0%, $colorMonoPale 50%, $colorMain 50%, $colorMain 100%,);
-	}
+	font-weight: bold;
+	// background-color: $colorMain;
+	// color: $colorMonoLight;
+	// &::after {
+	// 	background: linear-gradient(to left,$colorMonoPale 0%, $colorMonoPale 50%, $colorMain 50%, $colorMain 100%,);
+	// }
 	span {
 		font-size: 16px;
 	}
@@ -67,11 +73,12 @@ h3.headline {
 }
 h4.headline {
 	@include headlineSmall;
-	margin-bottom: 16px;
+	margin-bottom: 8px;
 	font-size: $fontBase;
-	&::after {
-		background-color: $colorMain;
-	}
+	color: $colorMain;
+	// &::after {
+	// 	background-color: $colorMain;
+	// }
 }
 
 //================================
@@ -339,8 +346,8 @@ h4.headline {
 	font-size: 16px;
 	a {
 		position: relative;
-		background-color: #ebebeb;
-		color: #333;
+		background-color: $colorMain;
+		color: $colorMonoLight;
 		text-align: center;
 		text-decoration: none;
 		padding: 20px 20px;
@@ -356,8 +363,8 @@ h4.headline {
 		}
 	}
 	a:hover {
-		background-color: #666;
-		color: #fff;
+		background-color: $colorMainPale;
+		color: $colorMonoLight;
 		text-decoration: none;
 	}
 }
@@ -389,6 +396,7 @@ h4.headline {
 		}
 		.works_img {
 			margin-bottom: 16px;
+			border: 1px solid #ddd;
 		}
 		.works_title {
 			font-size: 16px;
