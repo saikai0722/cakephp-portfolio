@@ -56,7 +56,7 @@ $set-prefix: '', -moz- , -webkit- , -o- , -ms-;
 @mixin headlineSmall {
 	position: relative;
 	z-index: 2;
-	padding-left: 18px;
+	// padding-left: 18px;
 	font-weight: normal;
 	&::after {
 		position: absolute;
@@ -159,6 +159,17 @@ $set-prefix: '', -moz- , -webkit- , -o- , -ms-;
 	font-weight: normal;
 	line-height: 1;
 	white-space: nowrap;
+}
+
+@mixin listNoteSetting {
+	position: relative;
+	margin-bottom: .3em;
+	&::before{
+		@include materialIcons;
+		top: 0;
+		font-size: 1.5em;
+		line-height: 1.134;
+	}
 }
 //================================
 //ラベル
