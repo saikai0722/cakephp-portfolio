@@ -1,4 +1,3 @@
-
 		<section>
 			<div class="fv">
 				<ul class="slider">
@@ -22,6 +21,7 @@
 			<div class="container">
 				<h2 class="headline">
 					私について
+					<span class="headline_large_en">About</span>
 				</h2>
 				<div class="content_box">
 					<div class="content_img">
@@ -35,7 +35,7 @@
 					</div>
 				</div>
 				<div class="link_box">
-					<a href="about.html" class="btn_link">私について詳しく</a>
+					<a href="<?php echo $this->Url->build(['controller'=>'About', 'action'=>'index']); ?>" class="btn_link">私について詳しく</a>
 				</div>
 			</div>
 		</section>
@@ -44,6 +44,7 @@
 			<div class="container">
 				<h2 class="headline">
 					制作実績
+					<span class="headline_large_en">Works</span>
 				</h2>
 				<div class="works_wrapper">
 					<?php /*<a href="<?php echo $this->Url->build(['controller'=>'Works', 'action'=>'banner']); ?>" class="works_item">
@@ -119,6 +120,7 @@
 			<div class="container">
 				<h2 class="headline">
 					お問い合わせ
+					<span class="headline_large_en">Contact</span>
 				</h2>
 				<div class="text_cnter">
 					<p class="email">saikai.yutaro@gmail.com</p>
