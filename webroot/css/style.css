@@ -2816,10 +2816,12 @@ h4.headline::after {
   position: relative;
   background-size: cover;
   background-position: center;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .fv .slider img {
-  height: 80vh;
+  height: 690px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -2912,8 +2914,10 @@ h4.headline::after {
 .scroll_line {
   display: inline-block;
   position: absolute;
-  right: 1em;
+  right: 50%;
   bottom: 0;
+  -webkit-transform: translate(50%);
+  transform: translate(50%);
   z-index: 2;
   padding: 80px 10px 10px;
   overflow: hidden;
@@ -3245,6 +3249,8 @@ h4.headline::after {
 .mv {
   position: relative;
   height: 130px;
+  max-width: 1440px;
+  margin: 0 auto;
   background: url(../img/fv-bgi_01@2x.jpg) top center #FFFFFF;
   background-size: cover;
 }
@@ -3446,7 +3452,7 @@ h4.headline::after {
         flex-wrap: wrap;
   }
   .works_wrapper.col3 .works_item {
-    width: calc( 33% - 8px);
+    width: calc( 32% - 8px);
     margin-bottom: 32px;
   }
   .works_wrapper.col3 .works_item:not(:nth-of-type(3n)) {
