@@ -9,6 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/slick.css">
 	<?=$this->Html->css('style.css?20201004') ?>
+	<?=$this->Html->css('lightbox.css') ?>
 	<?=$this->Html->script('common') ?>
 </head>
 
@@ -32,6 +33,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<?=$this->Html->script('slick.min') ?>
 	<?=$this->Html->script('script') ?>
+	<?=$this->Html->script('lightbox') ?>
 </body>
 
 </html>
