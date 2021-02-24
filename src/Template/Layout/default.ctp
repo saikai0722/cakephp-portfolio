@@ -10,7 +10,6 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<?=$this->Html->css('style.css?20201004') ?>
 	<?=$this->Html->css('lightbox.css') ?>
-	<?=$this->Html->script('common') ?>
 </head>
 
 <body>

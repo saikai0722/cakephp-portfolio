@@ -9,7 +9,7 @@
     height: 130px;
     max-width: 1440px;
     margin: 0 auto;
-	background: url(../img/fv-bgi_01@2x.jpg) top center $colorMonoLight;
+	background: url(../img/under_mv.jpg) top center $colorMonoLight;
     background-size: cover;
     &::after {
 		content: " ";
@@ -346,6 +346,7 @@ ul.nav-child {
             }
             .works_title {
                 padding: .5em;
+                background-color: $colorMonoLight;
                 text-align: center;
                 font-size: .8em;
             }
@@ -466,10 +467,12 @@ ul.nav-child {
         }
     }
     .sort-list {
+        margin-left: -1em;
+        margin-right: -1em;
         >li {
             width: 33%;
-            padding-left: 1.5em;
-            padding-right: 1.5em;
+            padding-left: 1em;
+            padding-right: 1em;
         }
     }
 }

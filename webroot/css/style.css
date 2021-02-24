@@ -3251,7 +3251,7 @@ h4.headline::after {
   height: 130px;
   max-width: 1440px;
   margin: 0 auto;
-  background: url(../img/fv-bgi_01@2x.jpg) top center #FFFFFF;
+  background: url(../img/under_mv.jpg) top center #FFFFFF;
   background-size: cover;
 }
 
@@ -3636,6 +3636,7 @@ ul.nav-child li:last-child {
 
 .sort-list > li.is-selected .works_title {
   padding: .5em;
+  background-color: #FFFFFF;
   text-align: center;
   font-size: .8em;
 }
@@ -3811,10 +3812,14 @@ ul.nav-child li:last-child {
   .site_images .col2 figure {
     padding: 16px;
   }
+  .sort-list {
+    margin-left: -1em;
+    margin-right: -1em;
+  }
   .sort-list > li {
     width: 33%;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 
