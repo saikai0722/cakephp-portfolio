@@ -3,7 +3,9 @@
 		<div class="container">
 			<div class="head_logo">
 				<h1 class="head_logo_img">
-					<a href="<?php echo $this->Url->build(['controller'=>'Home', 'action'=>'index']); ?>"><img src="https://placehold.jp/600x180.png" alt=""></a>
+					<a href="<?php echo $this->Url->build(['controller'=>'Home', 'action'=>'index']); ?>">
+						<?php echo $this->Html->image('logo.png', array('alt' => 'ロゴ')); ?>
+					</a>
 				</h1>
 			</div>
 			<a class="menuBtn" id="menuBtn">

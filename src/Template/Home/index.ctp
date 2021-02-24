@@ -1,12 +1,9 @@
 		<section>
 			<div class="fv">
 				<ul class="slider">
-					<li><img src="img/fv-bgi_01@2x.jpg" alt=""></li>
-					<li><img src="img/fv-bgi_02@2x.jpg" alt=""></li>
-					<li><img src="img/fv-bgi_03@2x.jpg" alt=""></li>
-					<li><img src="img/fv-bgi_01@2x.jpg" alt=""></li>
-					<li><img src="img/fv-bgi_02@2x.jpg" alt=""></li>
-					<li><img src="img/fv-bgi_03@2x.jpg" alt=""></li>
+					<li>
+					　<?php echo $this->Html->image('top_mv.jpg', array('alt' => 'メインビジュアル')); ?>
+					</li>
 				</ul>
 				<!-- <div href="#" class="scroll_arrow"><span></span>Scroll</div> -->
 				<div class="hero_text_box">
@@ -61,53 +58,53 @@
 							親和クリニック
 						</p>
 					</a>
-					<a href="#" class="works_item">
+					<a href="<?php echo $this->Url->build(['controller'=>'Works', 'action'=>'femmyShibuya']); ?>" class="works_item">
 						<figure class="works_img">
-							<img src="https://placehold.jp/640x350.png"  alt="">
+						<?php echo $this->Html->image('works/site/works_thmb_femmy_shibuya.jpg', array('alt' => 'フェミークリニック渋谷院 サイトサムネイル画像')); ?>
 						</figure>
-						<p class="works_title">架空のサイト</p>
+						<p class="works_title">フェミークリニック渋谷院</p>
 					</a>
-					<a href="#" class="works_item">
+					<a href="<?php echo $this->Url->build(['controller'=>'Works', 'action'=>'femmyAgora']); ?>" class="works_item">
 						<figure class="works_img">
-							<img src="https://placehold.jp/640x350.png"  alt="">
+						<?php echo $this->Html->image('works/site/works_thmb_agora.jpg', array('alt' => 'フェミークリニックドクターズコスメ サイトサムネイル画像')); ?>
 						</figure>
-						<p class="works_title">架空のサイト</p>
+						<p class="works_title">フェミークリニックドクターズコスメ</p>
 					</a>
-					<a href="#" class="works_item">
+					<a href="<?php echo $this->Url->build(['controller'=>'Works', 'action'=>'ukedental']); ?>" class="works_item">
 						<figure class="works_img">
-							<img src="https://placehold.jp/640x350.png"  alt="">
+						<?php echo $this->Html->image('works/site/works_thmb_uke.jpg', array('alt' => '宇毛デンタルオフィス サイトサムネイル画像')); ?>
 						</figure>
-						<p class="works_title">架空のサイト</p>
+						<p class="works_title">宇毛デンタルオフィス</p>
 					</a>
-					<a href="#" class="works_item">
+					<a href="<?php echo $this->Url->build(['controller'=>'Works', 'action'=>'mariaMachida']); ?>" class="works_item">
 						<figure class="works_img">
-							<img src="https://placehold.jp/640x350.png"  alt="">
+						<?php echo $this->Html->image('works/site/works_thmb_maria_machida.jpg', array('alt' => 'マリアクリニック町田院 サイトサムネイル画像')); ?>
 						</figure>
-						<p class="works_title">架空のサイト</p>
+						<p class="works_title">マリアクリニック町田院</p>
 					</a>
-					<a href="#" class="works_item">
+					<a href="<?php echo $this->Url->build(['controller'=>'Works', 'action'=>'aichimaria']); ?>" class="works_item">
 						<figure class="works_img">
-							<img src="https://placehold.jp/640x350.png"  alt="">
+						<?php echo $this->Html->image('works/site/works_thmb_aichimaria.jpg', array('alt' => '愛知マリアクリニック サイトサムネイル画像')); ?>
 						</figure>
-						<p class="works_title">架空のサイト</p>
+						<p class="works_title">愛知マリアクリニック</p>
 					</a>
-					<a href="#" class="works_item">
+					<a href="<?php echo $this->Url->build(['controller'=>'Works', 'action'=>'laketown']); ?>" class="works_item">
 						<figure class="works_img">
-							<img src="https://placehold.jp/640x350.png"  alt="">
+						<?php echo $this->Html->image('works/site/works_thmb_laketown.jpg', array('alt' => 'レイクタウンクリニック サイトサムネイル画像')); ?>
 						</figure>
-						<p class="works_title">架空のサイト</p>
+						<p class="works_title">レイクタウンクリニック</p>
 					</a>
-					<a href="#" class="works_item">
+					<a href="<?php echo $this->Url->build(['controller'=>'Works', 'action'=>'ayabe']); ?>" class="works_item">
 						<figure class="works_img">
-							<img src="https://placehold.jp/640x350.png"  alt="">
+						<?php echo $this->Html->image('works/site/works_thmb_ayabe.jpg', array('alt' => 'あやべクリニック サイトサムネイル画像')); ?>
 						</figure>
-						<p class="works_title">架空のサイト</p>
+						<p class="works_title">あやべクリニック</p>
 					</a>
-					<a href="#" class="works_item">
+					<a href="<?php echo $this->Url->build(['controller'=>'Works', 'action'=>'jdac']); ?>" class="works_item">
 						<figure class="works_img">
-							<img src="https://placehold.jp/640x350.png"  alt="">
+						<?php echo $this->Html->image('works/site/works_thmb_jdac.jpg', array('alt' => 'JDAC サイトサムネイル画像')); ?>
 						</figure>
-						<p class="works_title">架空のサイト</p>
+						<p class="works_title">JDAC</p>
 					</a>
 				</div>
 				<div class="link_box">

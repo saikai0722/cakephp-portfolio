@@ -15,7 +15,7 @@
     <div class="container">
         <h2 class="headline">
             親和クリニック
-            <span class="headline_large_en">shinbwa clinic</span>
+            <span class="headline_large_en">shinwa clinic</span>
         </h2>
 
         <div class="margin_b_medium bg_mono_light padding_medium">
@@ -30,15 +30,16 @@
                 <h4 class="headline">クライアント</h4>
                     <p class="margin_b_medium">親和クリニック</p>
                     <h4 class="headline">サイト規模</h4>
-                    <p class="margin_b_medium">約490ページ</p>
+                    <p class="margin_b_medium">814ページ</p>
                     <h4 class="headline">URL</h4>
                     <p class="margin_b_medium">https://shinwa-clinic.jp/</p>
+                    <h4 class="headline">月間PV数（2021/01）</h4>
+                    <p class="margin_b_medium">31,969</p>
                     <h4 class="headline">主な担当業務</h4>
                     <ul class="list_link margin_b_medium">
                         <li>新規ページ作成・ページ改修</li>
                         <li>MV作成</li>
                         <li>グローバルメニュー改修</li>
-                        <li>キャンペーンページ作成</li>
                     </ul>
                     <p>
                         <span class="lable">HTML</span>
