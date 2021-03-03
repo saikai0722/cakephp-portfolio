@@ -32,7 +32,7 @@
                     <h4 class="headline">サイト規模</h4>
                     <p class="margin_b_medium">63ページ</p>
                     <h4 class="headline">URL</h4>
-                    <p class="margin_b_medium">https://shinwa-clinic.jp/</p>
+                    <p class="margin_b_medium">https://www.ukedental.com/</p>
                     <h4 class="headline">月間PV数（2021/01）</h4>
                     <p class="margin_b_medium">8,088</p>
                     <h4 class="headline">主な担当業務</h4>
